@@ -55,7 +55,7 @@ DB_PASSWORD=123456
 
 #### 4. 生成数据表及生成测试数据
 
-在 Homestead 的网站根目录下运行以下命令
+在网站根目录下运行以下命令
 
 ```shell
 $ php artisan migrate
