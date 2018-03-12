@@ -1,6 +1,3 @@
-<p>cp .env.example .env</p><br>
-<p>配置好数据库以后生成jwt密钥:</p>
-<p>php artisan jwt:secret</p>
 ## 项目概述
 
 * 产品名称：laravel5.5-chatroom
@@ -29,4 +26,51 @@ laravel5.5-chatroom是一个简洁的聊天室应用，使用laravel5.5编写的
 #### 1. 克隆源代码
 
 克隆 `laravel-chatroom` 源代码到本地：
+
+    > git clone git@github.com:summerblue/larabbs.git
+
+
+#### 2. 安装扩展包依赖
+
+	composer install
+
+#### 3. 生成配置文件
+
+```
+cp .env.example .env
+```
+
+你可以根据情况修改 `.env` 文件里的内容，如数据库连接、缓存、邮件设置等：
+
+```
+APP_URL=http://localhost
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=chatroom
+DB_USERNAME=root
+DB_PASSWORD=123456
+```
+
+#### 4. 生成数据表及生成测试数据
+
+在 Homestead 的网站根目录下运行以下命令
+
+```shell
+$ php artisan migrate
+```
+
+初始的用户和聊天室表已使用数据迁移生成
+
+
+#### 5. 生成秘钥
+
+```shell
+php artisan key:generate
+```
+
+```shell
+php artisan jwt:secret
+```
 
