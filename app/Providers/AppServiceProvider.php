@@ -5,6 +5,8 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
 use Validator;
+use App\Models\User;
+use App\Observers\UserObserver;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,6 +21,7 @@ class AppServiceProvider extends ServiceProvider
         Validator::extend('telphone', function($attribute, $value, $parameters) {
             return preg_match('/^1[345789][0-9]{9}$/', $value);
         });
+        User::observe(UserObserver::class);
     }
 
     /**

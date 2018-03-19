@@ -14,4 +14,8 @@ class BaseController extends Controller {
         return Auth::guard('api');
     }
 
+    public function user(){
+    	return $this->guard()->user();
+    }
+
 }
