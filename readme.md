@@ -27,7 +27,7 @@ laravel5.5-chatroom是一个简洁的聊天室应用，使用laravel5.5编写的
 
 克隆 `laravel-chatroom` 源代码到本地：
 
-    > git clone git@github.com:summerblue/larabbs.git
+    > git clone https://github.com/zzDylan/laravel5.5-chatroom.git
 
 
 #### 2. 安装扩展包依赖
