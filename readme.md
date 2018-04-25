@@ -2,7 +2,7 @@
 
 * 产品名称：laravel5.5-chatroom
 * 项目代码：laravel5.5-chatroom
-* 演示地址：http://dev10.shareg.cn
+* 演示地址：http://chat.51godream.com
 
 laravel5.5-chatroom是一个简洁的聊天室应用，使用laravel5.5编写的聊天室api
 
